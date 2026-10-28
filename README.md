@@ -17,7 +17,18 @@
 
 ## Download
 
-Get the latest `.dmg` from [Releases](https://github.com/OWNER/open-sheets/releases/latest) (Apple silicon and Intel builds).
+[**⬇ Download the latest release**](https://github.com/OWNER/open-sheets/releases/latest)
+
+| Your Mac | Download |
+| --- | --- |
+| Apple silicon (M1 or later) | the `-arm64.dmg` file (or `-arm64-mac.zip`) |
+| Intel | the `.dmg` file without `arm64` (or `-mac.zip`) |
+
+Not sure which you have? Apple menu → **About This Mac**: "Chip: Apple M…" means Apple silicon, "Processor: Intel" means Intel.
+
+**Install:** open the `.dmg` and drag **Open Sheets** into **Applications**. If you downloaded the `.zip`, unzip it and move the app to **Applications**.
+
+All versions are listed on the [Releases page](https://github.com/OWNER/open-sheets/releases).
 
 > Unsigned builds: macOS will say the app "can't be opened". Right-click the app → **Open**, or run `xattr -dr com.apple.quarantine "/Applications/Open Sheets.app"`.
 
