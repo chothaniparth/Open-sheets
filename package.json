@@ -1,0 +1,62 @@
+{
+  "name": "open-sheets",
+  "productName": "Open Sheets",
+  "version": "0.1.0",
+  "description": "Open Sheets — a free, open-source spreadsheet app for macOS with dashboards and a bring-your-own-key AI assistant.",
+  "author": {
+    "name": "Open Sheets contributors"
+  },
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/OWNER/open-sheets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/open-sheets.git"
+  },
+  "type": "module",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "env -u ELECTRON_RUN_AS_NODE electron-vite dev",
+    "build": "electron-vite build",
+    "start": "env -u ELECTRON_RUN_AS_NODE electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:mac:unsigned": "npm run build && electron-builder --mac -c.mac.identity=null"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.89",
+    "@ai-sdk/azure": "^4.0.111",
+    "@ai-sdk/cohere": "^4.0.70",
+    "@ai-sdk/deepseek": "^3.0.74",
+    "@ai-sdk/google": "^4.0.106",
+    "@ai-sdk/groq": "^4.0.71",
+    "@ai-sdk/mistral": "^4.0.73",
+    "@ai-sdk/openai": "^4.0.103",
+    "@ai-sdk/openai-compatible": "^3.0.79",
+    "@ai-sdk/xai": "^5.0.31",
+    "ai": "^7.0.154",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "echarts": "^6.1.0",
+    "electron": "^45.0.0",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "exceljs": "^4.4.0",
+    "hyperformula": "^3.5.0",
+    "lucide-react": "^1.62.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-grid-layout": "^2.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

@@ -1,0 +1,59 @@
+appId: org.opensheets.app
+productName: Open Sheets
+copyright: Copyright © 2026 Open Sheets contributors
+directories:
+  output: release/${version}
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+  - '!**/*.map'
+asarUnpack: []
+mac:
+  category: public.app-category.productivity
+  target:
+    - target: dmg
+      arch: [arm64, x64]
+    - target: zip
+      arch: [arm64, x64]
+  icon: build/icon.png
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  # Notarization runs when APPLE_ID / APPLE_APP_SPECIFIC_PASSWORD / APPLE_TEAM_ID are set.
+  notarize: false
+  artifactName: Open-Sheets-${version}-${arch}-mac.${ext}
+  extendInfo:
+    NSHumanReadableCopyright: Copyright © 2026 Open Sheets contributors
+dmg:
+  artifactName: Open-Sheets-${version}-${arch}.${ext}
+  title: Open Sheets ${version}
+fileAssociations:
+  - ext: [xlsx, xlsm, xltx, xltm]
+    name: Excel Workbook
+    role: Editor
+    rank: Alternate
+  - ext: [xls, xlt, xlsb, xlw]
+    name: Excel 97-2004 / Binary Workbook
+    role: Editor
+    rank: Alternate
+  - ext: [ods, fods]
+    name: OpenDocument Spreadsheet
+    role: Editor
+    rank: Alternate
+  - ext: [csv, tsv, tab]
+    name: Delimited Text
+    role: Editor
+    rank: Alternate
+  - ext: [numbers]
+    name: Apple Numbers Spreadsheet
+    role: Viewer
+    rank: Alternate
+  - ext: [slk, sylk, dif, prn, dbf]
+    name: Legacy Spreadsheet
+    role: Editor
+    rank: Alternate
+publish:
+  provider: github
+  releaseType: release

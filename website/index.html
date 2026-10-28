@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Sheets — free spreadsheets for macOS</title>
+  <meta name="description" content="Open Sheets is a free, open-source spreadsheet app for macOS with Excel file support, live dashboards and an AI assistant that works with your own API keys." />
+  <link rel="icon" href="icon.png" />
+  <style>
+    :root {
+      --bg: #ffffff; --bg-2: #f5f5f3; --text: #1d1d1f; --text-2: #52514e; --border: #e2e2de;
+      --accent: #2a78d6; --accent-ink: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #161618; --bg-2: #1f2023; --text: #ececec; --text-2: #b0b0aa; --border: #333338; --accent: #3987e5; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+    a { color: var(--accent); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    nav { display: flex; align-items: center; gap: 12px; padding: 18px 0; }
+    nav img { width: 34px; height: 34px; }
+    nav b { font-size: 18px; flex: 1; }
+    nav a { color: var(--text-2); text-decoration: none; margin-left: 18px; font-size: 15px; }
+    header { text-align: center; padding: 56px 0 32px; }
+    h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 18px; }
+    header p { font-size: 20px; color: var(--text-2); max-width: 680px; margin: 0 auto 30px; }
+    .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 12px; font-weight: 600; text-decoration: none; border: 1px solid var(--border); color: var(--text); background: var(--bg); }
+    .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+    .small { color: var(--text-2); font-size: 14px; margin-top: 14px; }
+    .shot { margin: 40px auto 0; border-radius: 14px; border: 1px solid var(--border); box-shadow: 0 30px 80px rgba(0,0,0,.18); width: 100%; display: block; }
+    section { padding: 72px 0 0; }
+    h2 { font-size: 30px; letter-spacing: -0.02em; margin: 0 0 24px; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: var(--bg-2); border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--text-2); font-size: 15.5px; }
+    .formats { text-align: center; color: var(--text-2); }
+    .formats code { display: inline-block; margin: 4px; padding: 3px 9px; border-radius: 7px; background: var(--bg-2); border: 1px solid var(--border); font-size: 14px; color: var(--text); }
+    pre { background: var(--bg-2); border: 1px solid var(--border); border-radius: 12px; padding: 18px; overflow-x: auto; font-size: 14px; }
+    footer { padding: 72px 0 40px; color: var(--text-2); font-size: 14px; text-align: center; }
+    @media (max-width: 600px) { nav a { display: none; } header { padding-top: 28px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <img src="icon.png" alt="" />
+      <b>Open Sheets</b>
+      <a href="#features">Features</a>
+      <a href="#ai">AI</a>
+      <a href="https://github.com/OWNER/open-sheets">GitHub</a>
+    </nav>
+
+    <header>
+      <h1>Spreadsheets for the Mac.<br />Free, open source, AI-ready.</h1>
+      <p>Open and save Excel files, build live dashboards, and work with an AI assistant that uses the model you choose — with your own API key.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/OWNER/open-sheets/releases/latest">Download for macOS</a>
+        <a class="btn" href="https://github.com/OWNER/open-sheets">View source on GitHub</a>
+      </div>
+      <div class="small">Apple silicon and Intel Macs · GPL-3.0</div>
+      <img class="shot" src="screenshot.png" alt="Open Sheets showing a sales workbook with the AI assistant panel" />
+    </header>
+
+    <section id="features">
+      <h2>Everything you reach for every day</h2>
+      <div class="grid">
+        <div class="card"><h3>400+ formulas</h3><p>SUM, XLOOKUP, SUMIFS, INDEX/MATCH, dates, text, finance and statistics — Excel syntax, live recalculation and cross-sheet references.</p></div>
+        <div class="card"><h3>Real formatting</h3><p>Fonts, colors, borders, merged cells, number formats, conditional formatting, frozen panes and filters.</p></div>
+        <div class="card"><h3>Live dashboards</h3><p>Drag-and-drop charts, KPI cards, tables and notes that update the moment your data changes.</p></div>
+        <div class="card"><h3>Fast on big sheets</h3><p>A canvas-rendered grid scrolls smoothly through a million rows.</p></div>
+        <div class="card"><h3>Made for macOS</h3><p>Native menus, keyboard shortcuts, Finder integration, dark mode, print and PDF export.</p></div>
+        <div class="card"><h3>Private by default</h3><p>Your files stay on your Mac. No account, no telemetry.</p></div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <h2>An AI assistant that edits your sheets</h2>
+      <div class="grid">
+        <div class="card"><h3>Bring your own key</h3><p>Anthropic, OpenAI, Google Gemini, Mistral, Groq, xAI, DeepSeek, Cohere, OpenRouter, Together, Fireworks, Perplexity, Azure — or any OpenAI-compatible endpoint.</p></div>
+        <div class="card"><h3>Run models locally</h3><p>Point it at Ollama or LM Studio and keep everything on your machine.</p></div>
+        <div class="card"><h3>It does the work</h3><p>Ask for a summary table, formulas, formatting or a full dashboard. The assistant reads and writes cells, and every change can be undone.</p></div>
+        <div class="card"><h3>Keys stay in your Keychain</h3><p>API keys are encrypted with the macOS Keychain and sent only to the provider you picked.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Opens the files you already have</h2>
+      <p class="formats">
+        <code>.xlsx</code><code>.xlsm</code><code>.xltx</code><code>.xls</code><code>.xlsb</code><code>.ods</code><code>.numbers</code><code>.csv</code><code>.tsv</code><code>.txt</code><code>.xml</code><code>.html</code><code>.dif</code><code>.slk</code><code>.dbf</code><code>.prn</code>
+      </p>
+    </section>
+
+    <section>
+      <h2>Build it yourself</h2>
+      <pre><code>git clone https://github.com/OWNER/open-sheets.git
+cd open-sheets
+npm install
+npm run dev          # run from source
+npm run dist:mac     # build the .dmg</code></pre>
+    </section>
+
+    <footer>
+      Open Sheets is free software under the GNU GPL v3. It is an independent project, not affiliated with Microsoft or Apple.<br />
+      Excel is a trademark of Microsoft Corporation. Numbers is a trademark of Apple Inc.
+    </footer>
+  </div>
+</body>
+</html>
