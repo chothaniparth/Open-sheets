@@ -7,10 +7,10 @@
     "name": "Open Sheets contributors"
   },
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/OWNER/open-sheets",
+  "homepage": "https://github.com/chothaniparth/Open-sheets",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OWNER/open-sheets.git"
+    "url": "https://github.com/chothaniparth/Open-sheets.git"
   },
   "type": "module",
   "main": "./out/main/index.js",

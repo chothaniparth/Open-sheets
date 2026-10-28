@@ -17,7 +17,7 @@
 
 ## Download
 
-[**⬇ Download the latest release**](https://github.com/OWNER/open-sheets/releases/latest)
+[**⬇ Download the latest release**](https://github.com/chothaniparth/Open-sheets/releases/latest)
 
 | Your Mac | Download |
 | --- | --- |
@@ -28,7 +28,7 @@ Not sure which you have? Apple menu → **About This Mac**: "Chip: Apple M…" m
 
 **Install:** open the `.dmg` and drag **Open Sheets** into **Applications**. If you downloaded the `.zip`, unzip it and move the app to **Applications**.
 
-All versions are listed on the [Releases page](https://github.com/OWNER/open-sheets/releases).
+All versions are listed on the [Releases page](https://github.com/chothaniparth/Open-sheets/releases).
 
 > Unsigned builds: macOS will say the app "can't be opened". Right-click the app → **Open**, or run `xattr -dr com.apple.quarantine "/Applications/Open Sheets.app"`.
 
@@ -46,7 +46,7 @@ For local models, start Ollama or LM Studio, enable that provider (no key needed
 Requirements: macOS, Node.js 22+ and npm.
 
 ```bash
-git clone https://github.com/OWNER/open-sheets.git
+git clone https://github.com/chothaniparth/Open-sheets.git
 cd open-sheets
 npm install
 npm run dev              # run with hot reload
@@ -67,7 +67,6 @@ npm run dist:mac:unsigned  # same, skipping code signing
 3. Optional signing and notarization: add these repository secrets — `MAC_CERT_P12_BASE64`, `MAC_CERT_PASSWORD` (Developer ID Application certificate), `APPLE_ID`, `APPLE_APP_SPECIFIC_PASSWORD`, `APPLE_TEAM_ID`. Without them the workflow publishes unsigned builds.
 4. The **Website** workflow publishes `website/` to GitHub Pages (enable Pages → "GitHub Actions" in repo settings). Its download button points to the latest release.
 
-Replace `OWNER` in `package.json`, `src/main/menu.ts`, `src/renderer/src/components/Settings.tsx`, `website/index.html` and this README with your GitHub user or organization.
 
 ## Architecture
 

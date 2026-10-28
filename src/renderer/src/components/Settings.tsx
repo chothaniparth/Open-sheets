@@ -246,10 +246,10 @@ function About({ snap }: { snap: SettingsSnapshot }) {
         Vercel AI SDK (AI providers). Open Sheets is an independent project and is not affiliated with or endorsed by Microsoft.
       </p>
       <div className="row">
-        <button className="btn small" onClick={() => window.api.app.openExternal('https://github.com/OWNER/open-sheets')}>
+        <button className="btn small" onClick={() => window.api.app.openExternal('https://github.com/chothaniparth/Open-sheets')}>
           Source code <ExternalLink size={12} />
         </button>
-        <button className="btn small" onClick={() => window.api.app.openExternal('https://github.com/OWNER/open-sheets/issues')}>
+        <button className="btn small" onClick={() => window.api.app.openExternal('https://github.com/chothaniparth/Open-sheets/issues')}>
           Report an issue <ExternalLink size={12} />
         </button>
       </div>

@@ -148,8 +148,8 @@ export function buildMenu(handlers: { newWindow: OpenHandler; open: OpenHandler 
       role: 'help',
       submenu: [
         cmd('help:functions', 'Function Reference'),
-        { label: 'Open Sheets on GitHub', click: () => shell.openExternal('https://github.com/OWNER/open-sheets') },
-        { label: 'Report an Issue', click: () => shell.openExternal('https://github.com/OWNER/open-sheets/issues') }
+        { label: 'Open Sheets on GitHub', click: () => shell.openExternal('https://github.com/chothaniparth/Open-sheets') },
+        { label: 'Report an Issue', click: () => shell.openExternal('https://github.com/chothaniparth/Open-sheets/issues') }
       ]
     }
   ]

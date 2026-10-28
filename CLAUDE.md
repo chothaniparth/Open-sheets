@@ -98,4 +98,3 @@ The other engine files:
 - `.github/workflows/release.yml` runs on `v*` tags and builds the arm64 and x64 DMGs and zips on macOS.
 - It signs and notarizes when the `MAC_CERT_P12_BASE64` and Apple ID secrets are set. Otherwise it builds unsigned.
 - `website.yml` deploys `website/` to GitHub Pages.
-- Links in `menu.ts`, `README.md` and `website/` still use the `OWNER` placeholder for the GitHub account.
